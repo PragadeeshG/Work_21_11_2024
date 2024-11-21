@@ -1,0 +1,15 @@
+create table if not exists refernce_auth_tokens(
+token_code Integer not null,
+base_app_id Integer null,
+platform_name varchar(255) null,
+signature varchar(255) null,
+installation varchar(255) null,
+symmetric_key varchar(255) null,
+asymmetric_key varchar(255) null,
+bench_marks bigint null,
+decoded_hash Integer null,
+modular_data varchar(255) null,
+creation_date varchar(255) null,
+modified_date varchar(255) null,
+entity_state varchar(255) null,
+constraint refernce_auth_tokens_pk primary key(token_code));
